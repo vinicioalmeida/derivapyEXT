@@ -11,9 +11,9 @@ def straddle_payoff(stock_price, strike_price, call_price, put_price):
     return call_payoff + put_payoff
 
 # K e preços das calls e puts
-strike_price = 73.32
-call_price = 1.24
-put_price = 1.15
+strike_price = 36.01
+call_price = 0.89
+put_price = 0.63
 
 # Cálculo do payoff do straddle para um intervalo dos preços do ativo subjacente
 stock_prices = np.arange(int(0.5 * strike_price), int(1.5 * strike_price), 0.1)
