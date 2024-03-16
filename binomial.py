@@ -1,4 +1,4 @@
-# Binomial tree
+# Binomial tree - call
 
 import numpy as np
 
@@ -27,11 +27,11 @@ def binomial_tree_option_pricing(S, K, T, r, sigma, n):
     return option_price
 
 # Input parameters
-S0 = 20  # Initial stock price
-K = 22   # Strike price
-T = 0.25   # Time to expiration
-r = 0.12  # Risk-free interest rate
-sigma = 0.2  # Volatility
+S0 = 36.32  # Initial stock price
+K = 34.51   # Strike price
+T = 23/252   # Time to expiration
+r = 0.105587  # Risk-free interest rate
+sigma = 0.25  # Volatility
 
 # Specify the number of steps
 n = int(2)
@@ -39,4 +39,4 @@ n = int(2)
 # Calculate the option price
 option_price = binomial_tree_option_pricing(S0, K, T, r, sigma, n)
 
-print(f"The option price with {n} steps is: {option_price:.2f}")
+print(f"The call option price with {n} steps is: {option_price:.2f}")
