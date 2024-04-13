@@ -1,4 +1,4 @@
-import tradingcomdados   #pip install tradingcomdados
+import tradingcomdados
 from tradingcomdados import alternative_data as ad
 import yfinance as yf
 import pandas as pd
@@ -27,6 +27,7 @@ print(dados_acoes)
 retornos_diarios = dados_acoes.pct_change().dropna()
 
 desvio_padrao_diario = retornos_diarios.std()
+desvio_padrao_diario.index = desvio_padrao_diario.index.str.slice(stop = -3)
 print(desvio_padrao_diario)
 
 # Plotar os desvios padrão diários
@@ -35,7 +36,7 @@ desvio_padrao_diario.plot(kind='bar', color='blue')
 plt.title('Desvio Padrão Diário dos Retornos')
 plt.xlabel('Código da Ação')
 plt.ylabel('Desvio Padrão')
-plt.xticks(rotation=45)
+plt.xticks(rotation='vertical')
 plt.grid(axis='y')
 plt.tight_layout()
 plt.show()
