@@ -27,14 +27,14 @@ def binomial_tree_option_pricing(S, K, T, r, sigma, n):
     return option_price
 
 # Input parameters
-S0 = 36.32  # Initial stock price
-K = 34.51   # Strike price
-T = 23/252   # Time to expiration
-r = 0.105587  # Risk-free interest rate
+S0 = 61.63  # Initial stock price
+K = 61.99   # Strike price
+T = 4/252   # Time to expiration
+r = 0.101725  # Risk-free interest rate
 sigma = 0.25  # Volatility
 
 # Specify the number of steps
-n = int(2)
+n = int(100)
 
 # Calculate the option price
 option_price = binomial_tree_option_pricing(S0, K, T, r, sigma, n)
