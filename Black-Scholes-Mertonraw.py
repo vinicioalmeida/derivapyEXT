@@ -35,7 +35,7 @@ def norm_cdf(x):
     return (1.0 + math.erf(x / math.sqrt(2.0))) / 2.0
 
 # Example usage:
-S = 38.94  # Current price of the underlying asset
+S = 38.95  # Current price of the underlying asset
 K = 37.00  # Strike price of the option
 T = 4/252    # Time to expiration (year based)
 r = 0.101725 # Risk-free interest rate (5%)
