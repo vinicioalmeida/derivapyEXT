@@ -9,7 +9,7 @@ if not mt5.initialize():
 print(mt5.terminal_info())
 print(mt5.version())
 
-symbol="PETR4"
+symbol="VALE3"
 mt5.symbol_select(symbol,True)
 lot = 100
 price = mt5.symbol_info_tick(symbol).ask
