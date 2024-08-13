@@ -1,4 +1,4 @@
-# Precificando um Straddle - Derivativos em Py #03
+# Precificando um Straddle
 
 import numpy as np
 from scipy.stats import norm
