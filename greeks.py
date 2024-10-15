@@ -5,11 +5,12 @@ import matplotlib.pyplot as plt
 from scipy.stats import norm
 
 # Parametros - exemplo
-S = 33.51     # Preço spot da ação
-K = 32.95     # Strike price
-T = 26/252    # Tempo para o vencimento em anos
-r = (1+0.125579)**(26/252)      # Taxa livre de risco
-sigma = 0.33   # Volatilidade
+S = 37.62  # Current price of the underlying asset
+K = 37.65  # Strike price of the option
+T = 23/252    # Time to expiration (year based)
+r = 0.101407 # Risk-free interest rate
+sigma = 0.25 # Volatility
+
 
 ### Delta
 def black_scholes_delta(S, K, T, r, sigma, option_type='call'):

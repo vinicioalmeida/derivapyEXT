@@ -35,11 +35,11 @@ def norm_cdf(x):
     return (1.0 + math.erf(x / math.sqrt(2.0))) / 2.0
 
 # Example usage:
-S = 37.84  # Current price of the underlying asset
-K = 37.18  # Strike price of the option
-T = 9/252    # Time to expiration (year based)
+S = 37.62  # Current price of the underlying asset
+K = 37.65  # Strike price of the option
+T = 23/252    # Time to expiration (year based)
 r = 0.101407 # Risk-free interest rate
-sigma = 0.2533 # Volatility
+sigma = 0.2644 # Volatility
 
 call_price = black_scholes_call_put(S, K, T, r, sigma, 'call')
 put_price = black_scholes_call_put(S, K, T, r, sigma, 'put')
